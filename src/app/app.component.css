@@ -9,17 +9,20 @@
     min-height: 100vh;
     display:flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
     
    
   }
   
   .card {
     margin: 12px; 
+    margin-bottom: 12px; 
     width:240px;
     height:320px;
     perspective: 1000px;
     text-align: left;
+    
   }
   
   .card-inner {
@@ -123,14 +126,11 @@
   }
 
 
-
-
-footer {
+  footer {
+    position: absolute;
     display: flex;
-    justify-content: left;
+    justify-content: center;
     padding: 5px;
-    background-image: url("main.jpg");
+    background-color: #45a1ff;
     color: #fff;
-    font-family: "Arial Black, Gadget, sans-serif";
-    font-size: 18px;
-} 
+}
