@@ -1,0 +1,97 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Andada+Pro:ital,wght@1,700&display=swap');
+
+.card-container {
+    border: solid 1px rgba(0,0,0,0.20);
+    border-radius: 5px;
+    height: 380px; width: 320px;
+    margin: 10px;
+}
+.card-image {
+    height: 72%;
+    background-image: url("../../assets/images/cocktail-default-image.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 450px auto;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom: solid 1px rgba(0,0,0,0.35);
+}
+.card-title, .card-container .container
+{
+    padding-left : 9%;
+    padding-right: 9%;
+}
+.card-title {
+    /* border: solid 1px green; */
+}
+.card-title h3 {
+    width: fit-content;
+    padding-bottom: 5px;
+    border-bottom: solid 2px rgba(0,0,0,0);
+    margin-top: 29px;
+    margin-bottom: 10px;
+    font-size: 16pt;
+    position: relative;
+}
+.card-container .container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.card-category {
+    font-weight: lighter;
+    letter-spacing: 1px;
+    color: rgba(0,0,0,0.89);
+    font-size: 11pt;
+}
+.card-title h3, .card-category {
+    font-family: "Andada Pro";
+}
+
+.card-title h3:before {
+    display:block;
+    content:'';
+    width:0;
+    height:2px;
+    bottom:5px;
+    left:0;
+    bottom:-2px;
+    z-index:0;
+    position:absolute;
+    background: rgba(0,0,0,0.87);
+    transform-origin: center left;
+    transition: all 0.5s ease-in-out;
+}
+
+.card-alcohool {
+    /* border: solid 1px; */
+    height: 35px; width: 35px;
+    margin-top: -10px;
+    position: absolute;
+    right: 20px;
+}
+
+svg {
+}
+
+/** HOVER **/
+* {
+    transition-duration: 0.9s;
+}
+.card-container:hover {
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.card-container:hover .card-image {
+    background-size: 550px auto;
+}
+.card-container:hover .card-title h3 {
+    /* border-bottom-color: rgba(0,0,0,0.9);; */
+    /* letter-spacing: 0.297pt; */
+}
+
+.card-container:hover .card-title h3:before {
+    width:100%;
+    transform-origin: center right;
+}
