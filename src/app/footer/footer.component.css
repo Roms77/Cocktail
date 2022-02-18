@@ -1,0 +1,9 @@
+footer {
+    display: flex;
+    justify-content: left;
+    padding: 5px;
+    background-image: url("main.jpg");
+    color: #fff;
+    font-family: "Arial Black, Gadget, sans-serif";
+    font-size: 18px;
+} 
